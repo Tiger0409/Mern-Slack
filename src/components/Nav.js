@@ -8,7 +8,10 @@ class Nav extends Component {
     console.log("OK");
     browserHistory.push("/login")
   }
-
+  signupHandler(e){
+  
+    browserHistory.push("/signup")
+  }
   render() {
     return (
       <nav className="navbar navbar-default">
@@ -21,7 +24,8 @@ class Nav extends Component {
           </li>
         </ul>
         <ul className="nav navbar-nav navbar-right">
-          <li><a className="btn btn-info log" onClick={this.loginHandler} >Sign in</a></li>
+          <li><a className="btn btn-info log" onClick={this.loginHandler} >Sign In</a></li>
+          <li><a className="btn btn-info log" onClick={this.signupHandler} >Sign Up</a></li>
         </ul>
       </nav>
     );
