@@ -1,34 +1,35 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
 import Nav from './Nav';
-import { getCelebrityData } from '../utils/chucknorris-api';
-import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
+// import { getCelebrityData } from '../utils/chucknorris-api';
+import { FormControl } from "react-bootstrap";
+// import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
 
 class CreateWorkspace extends Component {
 
   constructor() {
     super();
-    this.state = { jokes: [] };
+    // this.state = { jokes: [] };
   }
 
-  getCelebrityJokes() {
-    getCelebrityData().then((jokes) => {
-      this.setState({ jokes });
-    });
-  }
+  // getCelebrityJokes() {
+  //   getCelebrityData().then((jokes) => {
+  //     this.setState({ jokes });
+  //   });
+  // }
 
-  componentDidMount() {
-    this.getCelebrityJokes();
-  }
-  handleChange = event => {
-    this.setState({
-      [event.target.id]: event.target.value
-    });
-  }
+  // componentDidMount() {
+  //   this.getCelebrityJokes();
+  // }
+  // handleChange = event => {
+  //   this.setState({
+  //     [event.target.id]: event.target.value
+  //   });
+  // }
 
   render() {
 
-    const { jokes } = this.state;
+    // const { jokes } = this.state;
 
     return (
       <div>
@@ -36,7 +37,7 @@ class CreateWorkspace extends Component {
         <h3 className="text-center">Create a new workspace</h3>
         <hr/>
 
-        { jokes.map((joke, index) => (
+        {/* { jokes.map((joke, index) => (
               <div className="col-sm-6" key={index}>
                 <div className="panel panel-danger">
                   <div className="panel-heading">
@@ -47,7 +48,7 @@ class CreateWorkspace extends Component {
                   </div>
                 </div>
               </div>
-          ))}
+          ))} */}
 
         <div className="jumbotron col-sm-12">
           <div className="text-center">

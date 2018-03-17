@@ -30,7 +30,7 @@ export default class Signup extends Component {
   }
 
   render() {
-    const { jokes } = this.state;
+    // const { jokes } = this.state;
     return (
     
       <div className="Login">

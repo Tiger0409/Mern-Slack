@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+// import {FormControl } from "react-bootstrap";
 import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
 import "./Login.css";
 import { Link } from 'react-router';
@@ -29,7 +30,7 @@ export default class Login extends Component {
   }
 
   render() {
-    const { jokes } = this.state;
+    // const { jokes } = this.state;
     return (
     //   <div>
     //       <Nav />
