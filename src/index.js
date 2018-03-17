@@ -5,6 +5,8 @@ import Slack from './components/Slack';
 import { Router, Route, browserHistory } from 'react-router';
 import SungIn from './containers/Login';
 import SignUp from './containers/Signup';
+import Home from './components/Home';
+
 
 const Root = () => {
   return (
@@ -14,6 +16,8 @@ const Root = () => {
         <Route path="/createworkspace" component={CreateWorkspace}/>
         <Route path="/login" component={SungIn}/>
         <Route path="/signup" component={SignUp}/>
+        <Route path="/home" component={Home}/>
+        
       </Router>
     </div>
   )

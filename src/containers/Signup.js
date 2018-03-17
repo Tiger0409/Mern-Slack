@@ -62,14 +62,15 @@ export default class Signup extends Component {
             />
           </FormGroup>
           
-          <Button
+          {/* <Button
             block
             bsSize="large"
             disabled={!this.validateForm()}
             type="submit"
-          >
-            Signup
-          </Button>
+            to='/login'
+          >SignUp
+          </Button> */}
+          <Link className="btn btn-lg btn-success col-md-12" to='/login'> Sign Up </Link>
         </form>
       </div>
       

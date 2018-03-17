@@ -54,14 +54,15 @@ export default class Login extends Component {
               type="password"
             />
           </FormGroup>
-          <Button
+          {/* <Button
             block
             bsSize="large"
             disabled={!this.validateForm()}
             type="submit"
           >
             Login
-          </Button>
+          </Button> */}
+           <Link className="btn btn-lg btn-success col-md-12" to='/home'> Log In </Link>
         </form>
       </div>
       
